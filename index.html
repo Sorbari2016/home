@@ -18,10 +18,453 @@
     />
   </head>
   <body>
-    <div id="root">
-      <div id="main-header">Header</div>
-      <div id="main-content">Main</div>
-      <div id="main-footer">Footer</div>
+    <div id="container">
+      <!-- Header section -->
+      <div id="main-header" class="pd-pry">
+        <div class="card potrait-card">
+          <img
+            src="/assets/images/clematins_official.jpeg"
+            srcset="
+              /assets/images/clematins_official_360.jpeg   360w,
+              /assets/images/clematins_official_480.jpeg   480w,
+              /assets/images/clematins_official_800.jpeg   800w,
+              /assets/images/clematins_official_1000.jpeg 1000w
+            "
+            sizes="(max-width: 600px) 100vw,
+                        (max-width: 900px) 50vw,
+                        33vw"
+            alt="Clematins Nwiibee official"
+          />
+          <h1>Clematins Nwiibee</h1>
+        </div>
+        <div class="card about-card">
+          <h2>About me</h2>
+          <main class="about-body">
+            <p>
+              I am a <mark>Data Analyst</mark>, who is now learning how to use
+              HTML, CSS, & JavaScript in communicating with the computer
+              effectively.
+              <br />
+              Started my web development journey with
+              <mark>The Odin Project</mark>, and so far it's been going great.
+              <br />
+              I have been able to build a few games and web apps, all hosted
+              <a href="https://github.com/Sorbari2016" target="_blank">Github</a
+              >.
+            </p>
+          </main>
+          <footer class="about-footer">
+            <ul class="flex-items">
+              <li class="item">
+                <a href="https://github.com/Sorbari2016">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    height="24"
+                    width="24"
+                    alt="github logo"
+                  />
+                </a>
+              </li>
+              <li class="item">
+                <a href="www.linkedin.com/in/clematins-nwiibee-77a179164">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                    height="24"
+                    width="24"
+                    alt="linkedIn logo"
+                  />
+                </a>
+              </li>
+              <li class="item">
+                <a href="https://x.com/clematins_?s=21">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
+                    height="24"
+                    width="24"
+                    alt="X logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+
+      <!-- Main content area -->
+      <div id="main-content" class="pd-pry">
+        <section class="project-area">
+          <h2>My work</h2>
+          <div class="project-grid">
+            <!-- First project -->
+            <article class="card project-card">
+              <figure class="project-snapshot">
+                <img
+                  src="/assets/screenshots/tdl-home.png"
+                  alt="Todolist screenshot"
+                />
+              </figure>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Todo List</h4>
+                  <ul class="flex-items project-links">
+                    <li class="item">
+                      <a
+                        href="https://github.com/Sorbari2016/todolist"
+                        class="project-link-icon"
+                        target="_blank"
+                      >
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                          height="24"
+                          width="24"
+                          alt="github logo"
+                        />
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="#" class="project-link-icon" target="_blank">
+                        <img
+                          src="/assets/icons/open-in-new.svg"
+                          height="24"
+                          width="24"
+                          alt="external link logo"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="project-description">
+                  Todo List is simple web app, where you can create, read, edit
+                  and delete your tasks or todo items.
+                </p>
+              </div>
+            </article>
+            <!-- Second project -->
+            <article class="card project-card">
+              <figure class="project-snapshot">
+                <img
+                  src="/assets/screenshots/clare_weather_app.png"
+                  alt="Clare Weather screenshot"
+                />
+              </figure>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Clare Weather</h4>
+                  <ul class="flex-items project-links">
+                    <li class="item">
+                      <a
+                        href="https://github.com/Sorbari2016/weather_app"
+                        class="project-link-icon"
+                        target="_blank"
+                      >
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                          height="24"
+                          width="24"
+                          alt="github logo"
+                        />
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="#" class="project-link-icon" target="_blank">
+                        <img
+                          src="/assets/icons/open-in-new.svg"
+                          height="24"
+                          width="24"
+                          alt="external link logo"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="project-description">
+                  Weather App is a web application that allows users to input a
+                  location, & get its weather conditions.
+                </p>
+              </div>
+            </article>
+            <!-- Third project -->
+            <article class="card project-card">
+              <figure class="project-snapshot">
+                <img
+                  src="/assets/screenshots/rock_paper_scissors.png"
+                  alt="Rock paper scissors screenshot"
+                />
+              </figure>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Rock Paper Scissors</h4>
+                  <ul class="flex-items project-links">
+                    <li class="item">
+                      <a
+                        href="https://github.com/Sorbari2016/rock-paper-scissors"
+                        class="project-link-icon"
+                        target="_blank"
+                      >
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                          height="24"
+                          width="24"
+                          alt="github logo"
+                        />
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a
+                        href="https://sorbari2016.github.io/rock-paper-scissors/"
+                        class="project-link-icon"
+                        target="_blank"
+                      >
+                        <img
+                          src="/assets/icons/open-in-new.svg"
+                          height="24"
+                          width="24"
+                          alt="external link logo"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="project-description">
+                  Rock paperr scissors is the web version of the rock paper
+                  scissor game; a decision-making tool, similar to flipping a
+                  coin or drawing straws.
+                </p>
+              </div>
+            </article>
+            <!-- Fourth project -->
+            <article class="card project-card">
+              <figure class="project-snapshot">
+                <img
+                  src="/assets/screenshots/calculator.png"
+                  alt="Calendar screenshot"
+                />
+              </figure>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Calculator</h4>
+                  <ul class="flex-items project-links">
+                    <li class="item">
+                      <a
+                        href="https://github.com/Sorbari2016/calculator"
+                        class="project-link-icon"
+                        target="_blank"
+                      >
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                          height="24"
+                          width="24"
+                          alt="github logo"
+                        />
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a
+                        href="https://sorbari2016.github.io/calculator/"
+                        class="project-link-icon"
+                        target="_blank"
+                      >
+                        <img
+                          src="/assets/icons/open-in-new.svg"
+                          height="24"
+                          width="24"
+                          alt="external link logo"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="project-description">
+                  Calculator is a simple calculator app that was created using
+                  HTML, CSS, & JavaScript.
+                </p>
+              </div>
+            </article>
+
+            <!-- Fifth project -->
+            <article class="card project-card">
+              <figure>
+                <img
+                  src="/assets/screenshots/drum_kit.png"
+                  alt="Drum kit screenshot"
+                />
+              </figure>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Drum Kit</h4>
+                  <ul class="flex-items project-links">
+                    <li class="item">
+                      <a
+                        href="https://github.com/Sorbari2016/drum_kit"
+                        class="project-link-icon"
+                        target="_blank"
+                      >
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                          height="24"
+                          width="24"
+                          alt="github logo"
+                        />
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a
+                        href="https://sorbari2016.github.io/drum_kit/"
+                        class="project-link-icon"
+                        target="_blank"
+                      >
+                        <img
+                          src="/assets/icons/open-in-new.svg"
+                          height="24"
+                          width="24"
+                          alt="external link logo"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="project-description">
+                  Drum Kit is an app that was built with the purpoose of
+                  learning how to work with sounds.
+                </p>
+              </div>
+            </article>
+            <!-- Sixth project -->
+            <article class="card project-card">
+              <figure class="project-snapshot">
+                <img
+                  src="/assets/screenshots/simon_Game.png"
+                  alt="Simon Game screenshot"
+                />
+              </figure>
+              <div class="project-info">
+                <div class="project-header">
+                  <h4 class="project-title">Simon Game</h4>
+                  <ul class="flex-items project-links">
+                    <li class="item">
+                      <a
+                        href="https://github.com/Sorbari2016/simon_game"
+                        class="project-link-icon"
+                        target="_blank"
+                      >
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                          height="24"
+                          width="24"
+                          alt="github logo"
+                        />
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a
+                        href="https://sorbari2016.github.io/simon_game/"
+                        class="project-link-icon"
+                        target="_blank"
+                      >
+                        <img
+                          src="/assets/icons/open-in-new.svg"
+                          height="24"
+                          width="24"
+                          alt="external link logo"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="project-description">
+                  The Simon game is a memory game where players repeat sequences
+                  of lights and sounds.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer section  -->
+      <div id="main-footer" class="pd-pry">
+        <div class="left-footer">
+          <h3 class="left-footer-title">Contact me</h3>
+          <p>
+            Please get in touch if you think that our work will be mutually
+            beneficial
+          </p>
+
+          <address>
+            ID's Estate, Uniport Road, <br />
+            Rumualogu, Port Harcourt.
+            <div class="contact">
+              <div class="flex-items">
+                <img
+                  src="/assets/icons/phone-outline.svg"
+                  alt="Phone icon"
+                  class="item"
+                />
+                <a href="tel:+2347036897471" class="item">+2347036897471</a>
+              </div>
+              <div class="flex-items">
+                <img
+                  src="/assets/icons/email-outline.svg"
+                  alt="Email icon"
+                  class="item"
+                />
+                <a href="mailto:2016clem@gmail.com" class="item"
+                  >2016clem@gmail.com</a
+                >
+              </div>
+            </div>
+          </address>
+          <div class="footer-icons">
+            <ul class="flex-items">
+              <li class="item">
+                <a href="https://github.com/Sorbari2016">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    height="24"
+                    width="24"
+                    alt="github logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="www.linkedin.com/in/clematins-nwiibee-77a179164">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                    height="24"
+                    width="24"
+                    alt="linkedIn logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/clematins_?s=21">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
+                    height="24"
+                    width="24"
+                    alt="x logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-footer">
+          <img
+            srcset="
+              /assets/images/clematins_360.png    360w,
+              /assets/images/clematins_480.png    480w,
+              /assets/images/clematins_800.png    800w,
+              /assets/images/clematins_1200.png 12000w
+            "
+            sizes="(max-width: 600px) 100vw,
+                        (max-width: 900px) 50vw,
+                        33vw"
+            src="/assets/images/clematins.png"
+            alt="Clematins Nwiibee"
+          />
+        </div>
+      </div>
     </div>
   </body>
 </html>
