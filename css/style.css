@@ -1,0 +1,66 @@
+/* GENERAL*/
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* #container {
+  display: grid;
+} */
+
+/* Headings */
+/* where - groups your headings into one compact selector while keeping zero specificity. */
+:where(h1, h2, h3, h4, h5) {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Main padding */
+.pd-pry {
+  padding: 2rem;
+}
+
+/* Flex containers */
+.flex-items {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* List */
+ul {
+  list-style-type: none;
+}
+
+/* Project image */
+.project-snapshot img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* Common card */
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 10px 25px -5px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
