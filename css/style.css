@@ -29,7 +29,7 @@ body {
 .flex-items {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 
 /* Links */
@@ -62,6 +62,7 @@ mark {
 /* HEADER */
 #main-header {
   display: flex;
+  min-height: 100vh;
   background-color: white;
   background-image: linear-gradient(
     /* color split along a diagonal */ 168deg,
@@ -79,9 +80,9 @@ mark {
 
 .portrait-card img {
   /* make image fill up its parent container */
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  width: auto;
+  max-width: auto;
+  height: 100%;
   display: block;
 }
 
@@ -98,6 +99,7 @@ mark {
   padding: 2rem;
   align-self: center;
   background: white;
+  margin-left: 1rem;
 }
 
 .about-card h2 {
@@ -117,12 +119,22 @@ mark {
   justify-content: flex-end;
 }
 
+.about-card .item:hover {
+  transform: translateY(-2px);
+  opacity: 0.75;
+}
+
 .about-body a:hover {
   text-decoration: underline;
   font-weight: 600;
 }
 
 /* MAIN PORTION */
+#main-content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .project-area h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -138,6 +150,7 @@ mark {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding-bottom: 1.5rem;
 }
 
 .project-snapshot {
@@ -173,10 +186,10 @@ mark {
 
 .project-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.6rem;
 }
 
-.project-link-icon:hover {
+.project-links .item:hover {
   transform: translateY(-2px);
   opacity: 0.75;
 }
@@ -191,14 +204,13 @@ mark {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: #0891b2;
-  margin-top: 2rem;
   color: white;
 }
 
 .left-footer {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 address {
@@ -213,6 +225,18 @@ address {
   font-size: 1.5rem;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact a:hover {
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .right-footer {
   width: 100%;
   height: 400px;
@@ -224,6 +248,11 @@ address {
   width: 100%;
   display: block;
   background-color: white;
+}
+
+.footer-icons .item:hover {
+  transform: translateY(-2px);
+  opacity: 0.75;
 }
 
 /* RESPONSIVE */
@@ -288,6 +317,12 @@ address {
     width: 100%;
   }
 
+  .portrait-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
   .portrait-card h1 {
     text-align: center;
     left: 1rem;
@@ -320,6 +355,15 @@ address {
     justify-content: center;
     gap: 12px;
     margin-top: 1rem;
+  }
+
+  #main-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-area h2 {
+    text-align: center;
   }
 
   .project-grid {
@@ -357,6 +401,7 @@ address {
 @media (max-width: 450px) {
   .portrait-card h1 {
     font-size: 1.875rem;
+    left: 4rem;
   }
 
   .about-card h2 {
