@@ -65,7 +65,7 @@ mark {
   min-height: 100vh;
   background-color: white;
   background-image: linear-gradient(
-    /* color split along a diagonal */ 168deg,
+    168deg,
     #0891b2 59.95%,
     rgba(0, 0, 0, 0.16) 60%,
     rgba(0, 0, 0, 0) 60%
@@ -76,13 +76,17 @@ mark {
   position: relative;
   z-index: 50;
   border-right: none;
+  flex: 0 0 38%;
+  max-width: 420px;
+  min-width: 260px;
+  overflow: hidden;
 }
 
 .portrait-card img {
-  /* make image fill up its parent container */
-  width: auto;
-  max-width: auto;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center top;
   display: block;
 }
 
@@ -99,7 +103,8 @@ mark {
   padding: 2rem;
   align-self: center;
   background: white;
-  margin-left: 1rem;
+  margin-left: 0; /* no gap */
+  flex: 1 1 auto;
 }
 
 .about-card h2 {
@@ -261,6 +266,7 @@ address {
 @media (max-width: 900px) {
   #main-header {
     display: flow-root;
+    position: relative;
   }
 
   .portrait-card {
@@ -269,6 +275,7 @@ address {
     float: left;
     margin-right: 18px;
     margin-bottom: 14px;
+    overflow: visible;
   }
 
   .portrait-card h1 {
@@ -315,6 +322,7 @@ address {
 
   .portrait-card {
     width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   .portrait-card img {
@@ -332,7 +340,7 @@ address {
 
   .about-card h2 {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   .about-card .flex-items {
@@ -343,10 +351,11 @@ address {
     border: 0;
     box-shadow: none;
     padding: 0;
+    margin-left: 0;
   }
 
   .about-body {
-    margin-bottom: 0;
+    margin-bottom: 0.6rem;
   }
 
   .about-footer {
@@ -389,7 +398,7 @@ address {
   }
 
   .footer-icons .flex-items {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .right-footer img {
@@ -401,7 +410,7 @@ address {
 @media (max-width: 450px) {
   .portrait-card h1 {
     font-size: 1.875rem;
-    left: 4rem;
+    left: 2rem;
   }
 
   .about-card h2 {
